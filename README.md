@@ -2,13 +2,17 @@
 
 A read-only [Model Context Protocol](https://modelcontextprotocol.io) server for querying Stripe — customers, payments, subscriptions, invoices, and refunds — from Claude or any MCP-compatible client.
 
-Built as a companion to my [SaaS backend boilerplate](https://github.com/robinafaruqia/nodejsboilerplate).
+[![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en/install-mcp?name=stripe-mcp&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIkBkZXZ0ZWNodHJpY2tzL3N0cmlwZS1tY3AiXSwiZW52Ijp7IlNUUklQRV9TRUNSRVRfS0VZIjoiWU9VUl9TVFJJUEVfVEVTVF9LRVkifX0=)
+
+After install, replace `YOUR_STRIPE_TEST_KEY` in Cursor MCP settings with a Stripe **test** secret (`sk_test_...` or `rk_test_...`).
 
 ## Why read-only
 
 This server intentionally exposes **no write, refund, or delete tools**. It's designed for safely querying and exploring Stripe data from an AI assistant — not for taking billing actions. It also refuses to start if you pass a live secret key, to make accidental production use harder.
 
 ## Install
+
+Click **Add to Cursor** above, or install from npm:
 
 ```bash
 npm install -g @devtechtricks/stripe-mcp
@@ -78,12 +82,6 @@ node index.js
 ```
 
 `index.js` loads `.env` from the package directory when `STRIPE_SECRET_KEY` is not already set. MCP clients should still pass the key in `env` (npm installs do not include `.env`).
-
-## Roadmap
-
-- [ ] `search_customers` using Stripe's search API
-- [ ] Pagination cursors (`starting_after`) for large result sets
-- [ ] Optional tools that cross-reference organization/billing data from the [SaaS boilerplate](https://github.com/robinafaruqia/nodejsboilerplate) once its billing module ships
 
 ## License
 
