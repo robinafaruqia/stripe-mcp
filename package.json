@@ -1,7 +1,8 @@
 {
   "name": "@devtechtricks/stripe-mcp",
-  "version": "0.1.0",
-  "description": "A read-only MCP server for querying Stripe customers, payments, subscriptions, and invoices from any MCP client.",
+  "version": "0.1.2",
+  "mcpName": "io.github.robinafaruqia/stripe-mcp",
+  "description": "Read-only MCP server for querying Stripe customers, payments, subscriptions, invoices, and refunds from any MCP client.",
   "type": "module",
   "main": "index.js",
   "bin": {
@@ -19,7 +20,12 @@
     "mcp",
     "model-context-protocol",
     "stripe",
-    "ai",
+    "stripe-api",
+    "payments",
+    "subscriptions",
+    "invoices",
+    "ai-assistant",
+    "cursor",
     "claude"
   ],
   "author": "Robina Faruqia",

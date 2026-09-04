@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.robinafaruqia/stripe-mcp",
+  "title": "Stripe MCP",
+  "description": "Read-only MCP server for querying Stripe customers, payments, and invoices.",
+  "repository": {
+    "url": "https://github.com/robinafaruqia/stripe-mcp",
+    "source": "github"
+  },
+  "version": "0.1.2",
+  "websiteUrl": "https://www.npmjs.com/package/@devtechtricks/stripe-mcp",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@devtechtricks/stripe-mcp",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "STRIPE_SECRET_KEY",
+          "description": "Stripe test-mode secret or restricted key (sk_test_ or rk_test_)",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true,
+          "placeholder": "sk_test_..."
+        }
+      ]
+    }
+  ]
+}
