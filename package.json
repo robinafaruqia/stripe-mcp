@@ -10,6 +10,8 @@
   },
   "files": [
     "index.js",
+    "mcp.json",
+    "plugin.json",
     "README.md",
     "LICENSE"
   ],

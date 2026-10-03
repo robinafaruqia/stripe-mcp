@@ -1,0 +1,24 @@
+{
+  "name": "stripe-mcp",
+  "version": "0.1.2",
+  "description": "Read-only MCP server for querying Stripe customers, payments, subscriptions, invoices, and refunds.",
+  "author": {
+    "name": "Robina khan"
+  },
+  "homepage": "https://github.com/robinafaruqia/stripe-mcp#readme",
+  "repository": "https://github.com/robinafaruqia/stripe-mcp",
+  "license": "MIT",
+  "keywords": ["mcp", "stripe", "payments", "subscriptions", "invoices"],
+  "mcpServers": "./mcp.json",
+  "variables": {
+    "type": "object",
+    "required": ["STRIPE_SECRET_KEY"],
+    "properties": {
+      "STRIPE_SECRET_KEY": {
+        "type": "string",
+        "title": "Stripe test secret key",
+        "description": "Stripe test-mode secret or restricted key (sk_test_ or rk_test_). Live keys are refused."
+      }
+    }
+  }
+}

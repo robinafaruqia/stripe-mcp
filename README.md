@@ -15,6 +15,18 @@ Use it with **any AI or client that supports MCP** (Model Context Protocol)—Cu
 - **Single file** — just `index.js`, no build step
 - **Works with any MCP client** — Cursor, Claude, Windsurf, and others
 
+## Cursor plugin
+
+This repo is an [Agent Plugin](https://open-plugins.com) and a Cursor plugin. [cursor.directory](https://cursor.directory/plugins/new) only detects components committed at the repo root. The files it needs are:
+
+| File | Purpose |
+|------|---------|
+| `mcp.json` | MCP server entry (`npx -y @devtechtricks/stripe-mcp`) |
+| `plugin.json` | Open Plugins manifest |
+| `.cursor-plugin/plugin.json` | Cursor listing metadata and the `STRIPE_SECRET_KEY` variable |
+
+After these files are on the default branch of the public GitHub repo, submit `https://github.com/robinafaruqia/stripe-mcp` at [cursor.directory/plugins/new](https://cursor.directory/plugins/new). On install, set `STRIPE_SECRET_KEY` to a Stripe **test** key (`sk_test_...` or `rk_test_...`).
+
 ## MCP Configuration
 
 ### Cursor — one-click install

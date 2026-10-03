@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "stripe-mcp",
+  "version": "0.1.2",
+  "description": "Read-only MCP server for querying Stripe customers, payments, subscriptions, invoices, and refunds.",
+  "author": {
+    "name": "Robina khan"
+  },
+  "homepage": "https://github.com/robinafaruqia/stripe-mcp#readme",
+  "repository": "https://github.com/robinafaruqia/stripe-mcp",
+  "license": "MIT",
+  "keywords": ["mcp", "stripe", "payments", "subscriptions", "invoices"]
+}
