@@ -4,6 +4,11 @@
 [![GitHub stars](https://img.shields.io/github/stars/robinafaruqia/stripe-mcp.svg?style=social)](https://github.com/robinafaruqia/stripe-mcp)
 # stripe-mcp
 
+[![npm version](https://img.shields.io/npm/v/@devtechtricks/stripe-mcp.svg)](https://www.npmjs.com/package/@devtechtricks/stripe-mcp)
+[![npm downloads](https://img.shields.io/npm/dm/@devtechtricks/stripe-mcp.svg)](https://www.npmjs.com/package/@devtechtricks/stripe-mcp)
+[![license](https://img.shields.io/npm/l/@devtechtricks/stripe-mcp.svg)](https://github.com/robinafaruqia/stripe-mcp/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/robinafaruqia/stripe-mcp.svg?style=social)](https://github.com/robinafaruqia/stripe-mcp)
+
 A **read-only MCP server** for querying **Stripe** — customers, payments, subscriptions, invoices, and refunds.
 
 Use it with **any AI or client that supports MCP** (Model Context Protocol)—Cursor, Claude Desktop, Claude Code, Windsurf, or other MCP hosts.
